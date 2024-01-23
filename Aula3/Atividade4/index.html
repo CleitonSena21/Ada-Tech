@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Ajude a Causa</title>
+</head>
+<body>
+
+    <div class="box">
+
+        <h1>Corrida Olímpica - ONG  Ajude a Causa</h1>
+       
+            <form action="http://localhost:3000/form">
+
+                <div class="formulario">
+                    <label for="nome">Nome do participante</label>
+                    <input type="text">
+                </div> 
+
+                <div class="formulario">
+                    <label for="idade">Idade</label>
+                    <input type="number">
+                </div>
+
+                <div class="formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email">
+                </div>
+
+                <div class="formulario">
+                    <label for="tamanhoCamisa">Tamanho a camisa</label>
+                    <select name="tamanhoCamisa" id="tamanhoCamisa">
+                        <option value="" selected> --- Escolha --- </option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XG">XG</option>
+                    </select> 
+                </div>    
+
+                <div class="radio">
+                    <legend>Categoria de Inscrição</legend>
+                    <input type="radio" name="selecao" id="3km"> <label for="3km">Corrida 3Km [3RUN]</label> <br>
+                    <input type="radio" name="selecao" id="5km"> <label for="5km"> Corrida 5Km [5RUN]</label> <br>
+                    <input type="radio" name="selecao" id="caminhada"> <label for="caminhada"> Caminhada 4Km [4WALK]</label>
+                </div> 
+
+                <div class="formulario">
+                    <p>Gostaria de fazer uma doação?</p>
+                    <label for="doacao">Doação R$</label>
+                    <input type="number">
+                </div>
+
+                <div class="formulario">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </div>
+
+            </form>   
+    </div>
+
+    </body>
+</html>
